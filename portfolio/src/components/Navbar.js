@@ -32,15 +32,15 @@ const Navbar = () => {
           <li><NavLink to="/experience" onClick={() => setIsOpen(false)}>Experience</NavLink></li>
           <li><NavLink to="/contact" onClick={() => setIsOpen(false)}>Contact</NavLink></li>
           <div className="nav-socials-mobile">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://github.com/Buwanekafernando" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/buwaneka-fernando-848684237" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           </div>
         </ul>
 
         <div className="nav-right">
           <div className="nav-socials">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://github.com/Buwanekafernando" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/buwaneka-fernando-848684237" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           </div>
           <button className="nav-toggle" onClick={toggleMenu}>
             {isOpen ? <FaTimes /> : <FaBars />}
