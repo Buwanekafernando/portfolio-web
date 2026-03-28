@@ -86,14 +86,14 @@ const Home = () => {
           <div className="about-content">
             <h3 className="about-subheading">Personal Information</h3>
             <div className="personal-info-grid">
-              <div className="info-item"><span>Full Name:</span> Buwaneka Fernando</div>
+              <div className="info-item"><span>Name:</span> Buwaneka Fernando</div>
               <div className="info-item"><span>Email:</span> fernandobuwaneka@gmail.com</div>
               <div className="info-item"><span>Phone:</span> +94 77 123 4567</div>
               <div className="info-item"><span>Address:</span> Panadura, SL</div>
-
               <div className="info-item"><span>Zip Code:</span> 12345</div>
-              <div className="info-item"><span>Experience:</span> Entry Level / Student</div>
+              <div className="info-item"><span>Experience:</span> Entry Level</div>
             </div>
+
             <a href={cvFile} download className="btn btn-primary mt-2">Hire Me</a>
           </div>
         </div>

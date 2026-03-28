@@ -45,20 +45,21 @@
 }
 
 .personal-info-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
   margin-bottom: 3rem;
 }
 
 .info-item {
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 220px;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   color: var(--text-secondary);
   font-size: 1.05rem;
   line-height: 1.5;
-  word-break: break-all; /* For long emails/links */
+  overflow-wrap: anywhere;
 }
 
 .info-item span {
@@ -66,8 +67,9 @@
   font-weight: 700;
   margin-right: 0.8rem;
   white-space: nowrap;
-  display: block;
+  display: inline-block;
 }
+
 
 
 .btn-primary.mt-2 {
