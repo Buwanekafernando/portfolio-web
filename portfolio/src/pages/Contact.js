@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
 import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
-import './Contact.css';
+import '../styles/Contact.css';
 
 const Contact = () => {
   return (

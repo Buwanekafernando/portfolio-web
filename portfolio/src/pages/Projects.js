@@ -2,7 +2,7 @@ import React from 'react';
 import Section from '../components/Section';
 import { projects } from '../data/projects';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import './Projects.css';
+import '../styles/Projects.css';
 
 const Projects = () => {
   return (

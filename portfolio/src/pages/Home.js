@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import './Home.css';
+import '../styles/Home.css';
 import profileImg from '../assets/Buwaneka_fernando.jpeg';
 import cvFile from '../assets/CV of Buwaneka_Fernando.pdf';
 

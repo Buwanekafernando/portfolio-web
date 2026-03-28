@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
 import { skills } from '../data/skills';
-import './Skills.css';
+import '../styles/Skills.css';
 
 const Skills = () => {
   return (
