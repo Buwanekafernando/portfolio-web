@@ -25,12 +25,12 @@ const Navbar = () => {
         </NavLink>
 
         <ul className={`nav-links ${isOpen ? 'nav-active' : ''}`}>
-          <li><NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink></li>
-          <li><NavLink to="/about" onClick={() => setIsOpen(false)}>About</NavLink></li>
-          <li><NavLink to="/skills" onClick={() => setIsOpen(false)}>Skills</NavLink></li>
-          <li><NavLink to="/projects" onClick={() => setIsOpen(false)}>Projects</NavLink></li>
-          <li><NavLink to="/experience" onClick={() => setIsOpen(false)}>Experience</NavLink></li>
-          <li><NavLink to="/contact" onClick={() => setIsOpen(false)}>Contact</NavLink></li>
+          <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
+          <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
+          <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
+          <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
+          <li><a href="#resume" onClick={() => setIsOpen(false)}>Resume</a></li>
+          <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
           <div className="nav-socials-mobile">
             <a href="https://github.com/Buwanekafernando" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/buwaneka-fernando-848684237" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>

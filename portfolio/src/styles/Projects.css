@@ -1,12 +1,17 @@
+.portfolio-section {
+  padding: 100px 0;
+  background-color: var(--bg-color);
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2.5rem;
 }
 
 .project-card {
   background: var(--card-bg);
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--border-color);
   transition: var(--transition);
@@ -15,12 +20,12 @@
 .project-card:hover {
   transform: translateY(-10px);
   border-color: var(--accent-color);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .project-img {
   position: relative;
-  height: 220px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -28,7 +33,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s ease;
+  transition: var(--transition);
 }
 
 .project-card:hover .project-img img {
@@ -41,7 +46,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 10, 12, 0.8);
+  background: rgba(7, 7, 8, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,10 +60,10 @@
 }
 
 .icon-btn {
+  width: 50px;
+  height: 50px;
   background: var(--accent-color);
   color: white;
-  width: 45px;
-  height: 45px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -68,28 +73,25 @@
 }
 
 .icon-btn:hover {
-  transform: scale(1.1);
   background: var(--accent-hover);
+  transform: scale(1.1);
 }
 
 .project-content {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .project-content h3 {
+  font-size: 1.5rem;
   margin-bottom: 0.8rem;
-  font-size: 1.3rem;
+  color: var(--text-primary);
 }
 
 .project-content p {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  line-height: 1.6;
 }
 
 .project-tags {
@@ -99,16 +101,16 @@
 }
 
 .tag {
-  font-size: 0.75rem;
-  background: rgba(99, 102, 241, 0.1);
+  background: var(--bg-secondary);
   color: var(--accent-color);
   padding: 0.3rem 0.8rem;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }

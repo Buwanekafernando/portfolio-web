@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg-color: #0a0a0c;
-  --bg-secondary: #16161a;
-  --text-primary: #f8f9fa;
-  --text-secondary: #a0a0ab;
-  --accent-color: #6366f1; /* Indigo */
-  --accent-hover: #4f46e5;
-  --card-bg: #1c1c21;
-  --border-color: #2e2e33;
+  --bg-color: #070708;
+  --bg-secondary: #101012;
+  --text-primary: #ffffff;
+  --text-secondary: #a9adb8;
+  --accent-color: #ff4a17; /* Orange from template */
+  --accent-hover: #e63e0d;
+  --card-bg: #141417;
+  --border-color: #1f1f23;
   --nav-height: 80px;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --glass: rgba(16, 16, 20, 0.7);
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --glass: rgba(7, 7, 8, 0.85);
+  scroll-behavior: smooth;
 }
+
+
 
 * {
   margin: 0;
@@ -125,7 +128,10 @@ button {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  background: linear-gradient(135deg, #ff4a17 0%, #ff8a00 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+

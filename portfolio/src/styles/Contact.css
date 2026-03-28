@@ -1,18 +1,25 @@
+.contact-section {
+  padding: 100px 0;
+  background-color: var(--bg-secondary);
+}
+
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 0.8fr 1.2fr;
   gap: 4rem;
-  align-items: start;
+  margin-top: 3rem;
 }
 
 .contact-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
 }
 
 .contact-info p {
   color: var(--text-secondary);
   margin-bottom: 2.5rem;
+  line-height: 1.6;
 }
 
 .contact-details {
@@ -23,70 +30,75 @@
 
 .contact-item {
   display: flex;
-  gap: 1.5rem;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .contact-icon {
   font-size: 1.5rem;
   color: var(--accent-color);
-  background: var(--bg-secondary);
   width: 50px;
   height: 50px;
+  background: var(--bg-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.contact-item:hover .contact-icon {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.1);
 }
 
 .contact-item h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-primary);
   margin-bottom: 0.2rem;
 }
 
 .contact-item p {
+  color: var(--text-secondary);
   margin-bottom: 0;
-  font-size: 0.9rem;
 }
 
 .contact-form {
-  background: var(--card-bg);
-  padding: 2.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.8rem 1rem;
+  padding: 1.2rem;
   background: var(--bg-color);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 12px;
   color: var(--text-primary);
-  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
   transition: var(--transition);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--accent-color);
-  outline: none;
+  box-shadow: 0 0 10px rgba(255, 74, 23, 0.1);
 }
 
-.w-100 {
-  width: 100%;
-  padding: 1rem;
+.contact-form .btn {
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
 }
 
 @media (max-width: 992px) {
   .contact-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 4rem;
   }
 }
