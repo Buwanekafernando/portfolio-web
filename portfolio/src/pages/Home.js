@@ -27,7 +27,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="container hero-container">
-          <motion.div 
+          <motion.div
             className="hero-content"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -37,7 +37,7 @@ const Home = () => {
             <h1 className="hero-name">Buwaneka <span className="text-gradient">Fernando</span></h1>
             <h3 className="hero-tagline">Data Science Student | Web Developer</h3>
             <p className="hero-intro">
-              I build data-driven applications and modern web experiences. 
+              I build data-driven applications and modern web experiences.
               Currently exploring the intersection of Big Data and Frontend Design.
             </p>
             <div className="hero-btns-wrapper">
@@ -53,8 +53,8 @@ const Home = () => {
               </div>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="hero-image-container"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -76,22 +76,22 @@ const Home = () => {
           <h2 className="section-title">About <span className="text-gradient">Me</span></h2>
           <div className="underline"></div>
         </div>
-        
+
         <div className="about-grid">
           <div className="about-img-container">
-             <div className="about-img-frame">
-                <img src={profileImg} alt="About Me" />
-             </div>
+            <div className="about-img-frame">
+              <img src={profileImg} alt="About Me" />
+            </div>
           </div>
           <div className="about-content">
             <h3 className="about-subheading">Personal Information</h3>
             <div className="personal-info-grid">
               <div className="info-item"><span>Name:</span> Buwaneka Fernando</div>
               <div className="info-item"><span>Email:</span> fernandobuwaneka@gmail.com</div>
-              <div className="info-item"><span>Phone:</span> +94 77 123 4567</div>
+              <div className="info-item"><span>Phone:</span> +94 76 226 5366</div>
               <div className="info-item"><span>Address:</span> Panadura, SL</div>
-              <div className="info-item"><span>Zip Code:</span> 12345</div>
-              <div className="info-item"><span>Experience:</span> Entry Level</div>
+              <div className="info-item"><span>Zip Code:</span> 12500</div>
+              <div className="info-item"><span>Experience:</span> Internship</div>
             </div>
 
             <a href={cvFile} download className="btn btn-primary mt-2">Hire Me</a>
@@ -106,7 +106,7 @@ const Home = () => {
           <h2 className="section-title">My <span className="text-gradient">Resume</span></h2>
           <div className="underline"></div>
         </div>
-        
+
         <div className="experience-container">
           <div className="experience-section">
             <h3 className="resume-header">Experience</h3>
@@ -151,22 +151,22 @@ const Home = () => {
           <h2 className="section-title">My <span className="text-gradient">Skills</span></h2>
           <div className="underline"></div>
         </div>
-        
+
         <div className="skills-container-grid">
           <div className="skill-group">
             <h3 className="skill-group-title">Development Skill</h3>
             <div className="skill-progress-list">
               <div className="skill-progress-item">
                 <div className="skill-info"><span>React.js</span><span>85%</span></div>
-                <div className="progress-bar"><div className="progress" style={{width: '85%'}}></div></div>
+                <div className="progress-bar"><div className="progress" style={{ width: '85%' }}></div></div>
               </div>
               <div className="skill-progress-item">
                 <div className="skill-info"><span>Node.js</span><span>75%</span></div>
-                <div className="progress-bar"><div className="progress" style={{width: '75%'}}></div></div>
+                <div className="progress-bar"><div className="progress" style={{ width: '75%' }}></div></div>
               </div>
               <div className="skill-progress-item">
                 <div className="skill-info"><span>Web Dev</span><span>90%</span></div>
-                <div className="progress-bar"><div className="progress" style={{width: '90%'}}></div></div>
+                <div className="progress-bar"><div className="progress" style={{ width: '90%' }}></div></div>
               </div>
             </div>
           </div>
@@ -175,15 +175,15 @@ const Home = () => {
             <div className="skill-progress-list">
               <div className="skill-progress-item">
                 <div className="skill-info"><span>Python</span><span>92%</span></div>
-                <div className="progress-bar"><div className="progress" style={{width: '92%'}}></div></div>
+                <div className="progress-bar"><div className="progress" style={{ width: '92%' }}></div></div>
               </div>
               <div className="skill-progress-item">
                 <div className="skill-info"><span>ML Algorithms</span><span>88%</span></div>
-                <div className="progress-bar"><div className="progress" style={{width: '88%'}}></div></div>
+                <div className="progress-bar"><div className="progress" style={{ width: '88%' }}></div></div>
               </div>
               <div className="skill-progress-item">
                 <div className="skill-info"><span>AI / Deep Learning</span><span>80%</span></div>
-                <div className="progress-bar"><div className="progress" style={{width: '80%'}}></div></div>
+                <div className="progress-bar"><div className="progress" style={{ width: '80%' }}></div></div>
               </div>
             </div>
           </div>
@@ -216,22 +216,29 @@ const Home = () => {
 
       {/* Portfolio Section */}
       <Section id="projects" className="portfolio-section">
-        <div className="section-head">
-          <p className="section-subtitle">My Recent Work</p>
-          <h2 className="section-title">My <span className="text-gradient">Portfolio</span></h2>
-          <div className="underline"></div>
+        <div className="section-head project-head">
+          <div>
+            <p className="section-subtitle">My Recent Work</p>
+            <h2 className="section-title">My <span className="text-gradient">Portfolio</span></h2>
+            <div className="underline"></div>
+          </div>
+          <a href="https://github.com/Buwanekafernando" target="_blank" rel="noopener noreferrer" className="github-section-link">
+            <FaGithub /> View Github Profile
+          </a>
         </div>
-        
+
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <div className="project-img">
-                <img src={project.image} alt={project.title} />
+                <img src={project.image} alt={project.title} className="primary-img" />
+                <img src={project.hoverImage} alt={project.title} className="secondary-img" />
                 <div className="project-overlay">
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="icon-btn"><FaGithub /></a>
                   <a href={project.demo} target="_blank" rel="noopener noreferrer" className="icon-btn"><FaExternalLinkAlt /></a>
                 </div>
               </div>
+
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
@@ -253,7 +260,7 @@ const Home = () => {
           <h2 className="section-title">Contact <span className="text-gradient">Me</span></h2>
           <div className="underline"></div>
         </div>
-        
+
         <div className="contact-container">
           <div className="contact-info">
             <h3>Contact Information</h3>
