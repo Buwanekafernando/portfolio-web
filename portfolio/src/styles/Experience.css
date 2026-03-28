@@ -1,4 +1,15 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.experience-section {
+  width: 100%;
+}
+
 .timeline {
+
   max-width: 800px;
   margin: 0 auto;
   position: relative;
