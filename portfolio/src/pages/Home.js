@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import profileImg from '../assets/Buwaneka_fernando.jpeg';
+import cvFile from '../assets/CV of Buwaneka_Fernando.pdf';
+
 
 const Home = () => {
   return (
@@ -23,7 +26,8 @@ const Home = () => {
             </p>
             <div className="hero-btns">
               <Link to="/projects" className="btn btn-primary">View Projects</Link>
-              <a href="/cv.pdf" download className="btn btn-outline">Download CV</a>
+              <a href={cvFile} download="CV_Buwaneka_Fernando.pdf" className="btn btn-outline">Download CV</a>
+
             </div>
           </motion.div>
           
@@ -34,8 +38,9 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <div className="image-blob">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Profile" />
+              <img src={profileImg} alt="Buwaneka Fernando" />
             </div>
+
           </motion.div>
         </div>
       </section>
