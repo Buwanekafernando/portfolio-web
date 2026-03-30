@@ -8,11 +8,13 @@ import '../styles/Experience.css';
 import '../styles/Skills.css';
 import '../styles/Projects.css';
 import '../styles/Contact.css';
+import '../styles/Certificates.css';
 import profileImg from '../assets/Buwaneka_fernando.jpeg';
 import cvFile from '../assets/CV of Buwaneka_Fernando.pdf';
 import { workExperience, education } from '../data/experience';
 import { skills } from '../data/skills';
 import { projects } from '../data/projects';
+import { certificates } from '../data/certificates';
 import Section from '../components/Section';
 
 const Home = () => {
@@ -247,6 +249,35 @@ const Home = () => {
                     <span key={tIndex} className="tag">{tag}</span>
                   ))}
                 </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Certificates Section */}
+      <Section id="certificates" className="certificates-section">
+        <div className="section-head">
+          <p className="section-subtitle">My Achievements</p>
+          <h2 className="section-title">Certificates <span className="text-gradient">& Courses</span></h2>
+          <div className="underline"></div>
+        </div>
+
+        <div className="certificates-grid">
+          {certificates.map((cert) => (
+            <div key={cert.id} className="certificate-card">
+              <div className="certificate-img">
+                <img src={cert.image} alt={cert.title} />
+                <div className="certificate-overlay">
+                  <a href={cert.link} target="_blank" rel="noopener noreferrer" className="view-cert-btn">
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+              <div className="certificate-content">
+                <div className="certificate-issuer">{cert.issuer}</div>
+                <h3>{cert.title}</h3>
+                <div className="certificate-date">{cert.date}</div>
               </div>
             </div>
           ))}

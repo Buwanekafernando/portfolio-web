@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import '../styles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -29,6 +29,7 @@ const Navbar = () => {
           <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
           <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
           <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
+          <li><a href="#certificates" onClick={() => setIsOpen(false)}>Certificates</a></li>
           <li><a href="#resume" onClick={() => setIsOpen(false)}>Resume</a></li>
           <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
           <div className="nav-socials-mobile">
@@ -38,6 +39,9 @@ const Navbar = () => {
         </ul>
 
         <div className="nav-right">
+          <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
+            {theme === 'dark' ? <FaSun /> : <FaMoon />}
+          </button>
           <div className="nav-socials">
             <a href="https://github.com/Buwanekafernando" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/buwaneka-fernando-848684237" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>

@@ -5,14 +5,24 @@
   --bg-secondary: #101012;
   --text-primary: #ffffff;
   --text-secondary: #a9adb8;
-  --accent-color: #ff4a17; /* Orange from template */
-  --accent-hover: #e63e0d;
+  --accent-color: #1e40af; /* Navy Blue */
+  --accent-hover: #1e3a8a;
   --card-bg: #141417;
   --border-color: #1f1f23;
   --nav-height: 80px;
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --glass: rgba(7, 7, 8, 0.85);
   scroll-behavior: smooth;
+}
+
+body.light-mode {
+  --bg-color: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --glass: rgba(255, 255, 255, 0.85);
 }
 
 
@@ -128,7 +138,7 @@ button {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #ff4a17 0%, #ff8a00 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
