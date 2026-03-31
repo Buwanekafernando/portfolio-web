@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import StackIcon from 'tech-stack-icons';
 import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaFileDownload, FaExternalLinkAlt } from 'react-icons/fa';
 import '../styles/Home.css';
 import '../styles/About.css';
@@ -23,6 +24,87 @@ const Home = () => {
   const aiProjects = projects.filter(p => p.tags.some(t => t.toLowerCase().includes('python') || t.toLowerCase().includes('ml') || t.toLowerCase().includes('ai') || t.toLowerCase().includes('tensorflow'))).length;
   const webProjects = projects.filter(p => p.tags.some(t => t.toLowerCase().includes('react') || t.toLowerCase().includes('node') || t.toLowerCase().includes('web') || t.toLowerCase().includes('html'))).length;
   const problemSolvingProjects = 3; // Hardcoded as per user request context or manually categorized
+
+  const techStackGroups = [
+    {
+      title: 'Programming Languages',
+      description: 'Java, Kotlin, Python, JavaScript, SQL, C++, TypeScript, PHP',
+      items: [
+        { name: 'java', label: 'Java' },
+        { name: 'kotlin', label: 'Kotlin' },
+        { name: 'python', label: 'Python' },
+        { name: 'js', label: 'JavaScript' },
+        { name: 'c++', label: 'C++' },
+        { name: 'c#', label: 'C#' },
+        { name: 'typescript', label: 'TypeScript' },
+        { name: 'php', label: 'PHP' },
+      ],
+    },
+    {
+      title: 'Web Development & Frameworks',
+      description: 'MERN stack, React.js, Spring Boot, FastAPI, WebSocket',
+      items: [
+        { name: 'html5', label: 'HTML5' },
+        { name: 'css3', label: 'CSS3' },
+        { name: 'bootstrap5', label: 'Bootstrap 5' },
+        { name: 'tailwindcss', label: 'Tailwind CSS' },
+        { name: 'vitejs', label: 'Vite' },
+        { name: 'nextjs', label: 'Next.js' },
+        { name: 'nodejs', label: 'Node.js' },
+        { name: 'expressjs', label: 'Express.js' },
+        { name: 'reactnative', label: 'React Native' },
+        { name: 'vuejs', label: 'Vue.js' },
+        { name: 'tomcat', label: 'Tomcat' },
+      ],
+    },
+    {
+      title: 'Databases',
+      description: 'MongoDB, MySQL, SQLite, MSSQL, XAMPP, PostgreSQL',
+      items: [
+        { name: 'mongodb', label: 'MongoDB' },
+        { name: 'mysql', label: 'MySQL' },
+        { name: 'sqlite', label: 'SQLite' },
+        { name: 'oracle', label: 'Oracle' },
+      ],
+    },
+    {
+      title: 'Data Science & Machine Learning',
+      description: 'ETL/ELT pipelines, Pandas, NumPy, Scikit-Learn, TensorFlow, NLP',
+      items: [
+        { name: 'analytics', label: 'Analytics' },
+        { name: 'pandas', label: 'Pandas' },
+        { name: 'tensorflow', label: 'TensorFlow' },
+        { name: 'pytorch', label: 'PyTorch' },
+        { name: 'huggingface', label: 'Hugging Face' },
+        { name: 'colab', label: 'Colab' },
+      ],
+    },
+    {
+      title: 'Tools & Platforms',
+      description: 'VS Code, GitHub, Cloudinary, Android Studio, RStudio, Figma, Power BI',
+      items: [
+        { name: 'vscode', label: 'VS Code' },
+        { name: 'github', label: 'GitHub' },
+        { name: 'git', label: 'Git' },
+        { name: 'cloudinary', label: 'Cloudinary' },
+        { name: 'postman', label: 'Postman' },
+        { name: 'figma', label: 'Figma' },
+        { name: 'rstudio', label: 'RStudio' },
+        { name: 'netbeans', label: 'NetBeans' },
+        { name: 'stackoverflow', label: 'StackOverflow' },
+      ],
+    },
+    {
+      title: 'Cloud & APIs',
+      description: 'Google Cloud Storage, REST APIs, AWS, Microsoft Azure',
+      items: [
+        { name: 'gcloud', label: 'Google Cloud' },
+        { name: 'aws', label: 'AWS' },
+        { name: 'azure', label: 'Azure' },
+        { name: 'firebase', label: 'Firebase' },
+      ],
+    },
+  ];
 
   return (
     <div className="home-page">
@@ -155,40 +237,20 @@ const Home = () => {
         </div>
 
         <div className="skills-container-grid">
-          <div className="skill-group">
-            <h3 className="skill-group-title">Development Skill</h3>
-            <div className="skill-progress-list">
-              <div className="skill-progress-item">
-                <div className="skill-info"><span>React.js</span><span>85%</span></div>
-                <div className="progress-bar"><div className="progress" style={{ width: '85%' }}></div></div>
-              </div>
-              <div className="skill-progress-item">
-                <div className="skill-info"><span>Node.js</span><span>75%</span></div>
-                <div className="progress-bar"><div className="progress" style={{ width: '75%' }}></div></div>
-              </div>
-              <div className="skill-progress-item">
-                <div className="skill-info"><span>Web Dev</span><span>90%</span></div>
-                <div className="progress-bar"><div className="progress" style={{ width: '90%' }}></div></div>
+          {techStackGroups.map((group) => (
+            <div key={group.title} className="skill-group">
+              <h3 className="skill-group-title">{group.title}</h3>
+              <p className="skill-group-description">{group.description}</p>
+              <div className="stack-icons-grid">
+                {group.items.map((item) => (
+                  <div key={item.name} className="stack-icon-card">
+                    <StackIcon name={item.name} className="stack-icon" />
+                    <span>{item.label}</span>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
-          <div className="skill-group">
-            <h3 className="skill-group-title">Data Science Skill</h3>
-            <div className="skill-progress-list">
-              <div className="skill-progress-item">
-                <div className="skill-info"><span>Python</span><span>92%</span></div>
-                <div className="progress-bar"><div className="progress" style={{ width: '92%' }}></div></div>
-              </div>
-              <div className="skill-progress-item">
-                <div className="skill-info"><span>ML Algorithms</span><span>88%</span></div>
-                <div className="progress-bar"><div className="progress" style={{ width: '88%' }}></div></div>
-              </div>
-              <div className="skill-progress-item">
-                <div className="skill-info"><span>AI / Deep Learning</span><span>80%</span></div>
-                <div className="progress-bar"><div className="progress" style={{ width: '80%' }}></div></div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </Section>
 
