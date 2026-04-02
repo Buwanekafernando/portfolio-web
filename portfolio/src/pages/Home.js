@@ -13,7 +13,6 @@ import '../styles/Certificates.css';
 import profileImg from '../assets/Buwaneka_fernando.jpeg';
 import cvFile from '../assets/CV of Buwaneka_Fernando.pdf';
 import { workExperience, education } from '../data/experience';
-import { skills } from '../data/skills';
 import { projects } from '../data/projects';
 import { certificates } from '../data/certificates';
 import Section from '../components/Section';
