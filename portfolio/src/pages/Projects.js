@@ -16,7 +16,8 @@ const Projects = () => {
         {projects.map((project) => (
           <div key={project.id} className="project-card">
             <div className="project-img">
-              <img src={project.image} alt={project.title} />
+              <img src={project.image} alt={project.title} className="primary-img" />
+              <img src={project.hoverImage} alt={project.title} className="secondary-img" />
               <div className="project-overlay">
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="icon-btn"><FaGithub /></a>
                 <a href={project.demo} target="_blank" rel="noopener noreferrer" className="icon-btn"><FaExternalLinkAlt /></a>
