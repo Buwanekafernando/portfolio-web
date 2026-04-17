@@ -37,11 +37,12 @@ const Home = () => {
         { name: 'c#', label: 'C#' },
         { name: 'typescript', label: 'TypeScript' },
         { name: 'php', label: 'PHP' },
+
       ],
     },
     {
       title: 'Web Development & Frameworks',
-      description: 'MERN stack, React.js, Spring Boot, FastAPI, WebSocket',
+      description: 'MERN stack, React.js, Spring Boot, FastAPI, WebSocket, Vue.js, TypeScript',
       items: [
         { name: 'html5', label: 'HTML5' },
         { name: 'css3', label: 'CSS3' },
@@ -64,11 +65,12 @@ const Home = () => {
         { name: 'mysql', label: 'MySQL' },
         { name: 'sqlite', label: 'SQLite' },
         { name: 'oracle', label: 'Oracle' },
+        { name: 'postgresql', label: 'PostgreSQL' },
       ],
     },
     {
       title: 'Data Science & Machine Learning',
-      description: 'ETL/ELT pipelines, Pandas, NumPy, Scikit-Learn, TensorFlow, NLP',
+      description: 'ETL/ELT pipelines, Pandas, NumPy, Scikit-Learn, TensorFlow, NLP,  Random Forest, Regression, LLMs, K-Means, Clustering',
       items: [
         { name: 'analytics', label: 'Analytics' },
         { name: 'pandas', label: 'Pandas' },
@@ -76,11 +78,12 @@ const Home = () => {
         { name: 'pytorch', label: 'PyTorch' },
         { name: 'huggingface', label: 'Hugging Face' },
         { name: 'colab', label: 'Colab' },
+        { name: 'scikitlearn', label: 'Scikit-Learn' },
       ],
     },
     {
       title: 'Tools & Platforms',
-      description: 'VS Code, GitHub, Cloudinary, Android Studio, RStudio, Figma, Power BI',
+      description: 'VS Code, GitHub, Cloudinary, Android Studio, RStudio, Figma, Power BI, Jupyter Notebook, Microsoft SQL Server Management Studio',
       items: [
         { name: 'vscode', label: 'VS Code' },
         { name: 'github', label: 'GitHub' },
@@ -91,6 +94,8 @@ const Home = () => {
         { name: 'rstudio', label: 'RStudio' },
         { name: 'netbeans', label: 'NetBeans' },
         { name: 'stackoverflow', label: 'StackOverflow' },
+
+
       ],
     },
     {

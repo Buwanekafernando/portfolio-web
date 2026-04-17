@@ -9,7 +9,7 @@ export const certificates = [
   },
   {
     id: 2,
-    title: "AWS - VPCs, Computer Solution, Network Concepts, File System",
+    title: "AWS - Connecting VPCs",
     issuer: "AWS SimuLean",
     date: "August 2025",
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
@@ -62,5 +62,85 @@ export const certificates = [
     date: "February 2024",
     image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=800",
     link: "#"
-  }
+  },
+  {
+    id: 10,
+    title: "AWS - Core Security Concepts",
+    issuer: "AWS SimuLean",
+    date: "October 2025",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 11,
+    title: "AWS - Databases in Practice",
+    issuer: "AWS SimuLean",
+    date: "October 2025",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 12,
+    title: "AWS - Networking Concepts",
+    issuer: "AWS SimuLean",
+    date: "August 2025",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 13,
+    title: "AWS - File Systems in the Cloud",
+    issuer: "AWS SimuLean",
+    date: "August 2025",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 14,
+    title: "AWS - Introduction to Amazon Simple Storage Service (S3)",
+    issuer: "AWS SimuLean",
+    date: "September 2025",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 15,
+    title: "AWS - Computing Solutions",
+    issuer: "AWS SimuLean",
+    date: "August 2025",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 16,
+    title: "Microsoft Azure - Explore relational database services in Azure",
+    issuer: "Microsoft Learning",
+    date: "August 2025",
+    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 17,
+    title: "Microsoft Azure - Configure virtual networks",
+    issuer: "Microsoft Learning",
+    date: "August 2025",
+    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 18,
+    title: "Microsoft Azure - Introduction to Azure virtual machines",
+    issuer: "Microsoft Learning",
+    date: "August 2025",
+    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
+  {
+    id: 19,
+    title: "Microsoft Azure - Add and size disks in Azure virtual machines",
+    issuer: "Microsoft Learning",
+    date: "August 2025",
+    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800",
+    link: "#"
+  },
 ];
