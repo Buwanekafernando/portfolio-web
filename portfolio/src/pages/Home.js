@@ -332,18 +332,15 @@ const Home = () => {
         <div className="certificates-grid">
           {certificates.map((cert) => (
             <div key={cert.id} className="certificate-card">
-              <div className="certificate-img">
-                <img src={cert.image} alt={cert.title} />
-                <div className="certificate-overlay">
-                  <a href={cert.link} target="_blank" rel="noopener noreferrer" className="view-cert-btn">
-                    View Certificate
-                  </a>
-                </div>
-              </div>
               <div className="certificate-content">
                 <div className="certificate-issuer">{cert.issuer}</div>
                 <h3>{cert.title}</h3>
                 <div className="certificate-date">{cert.date}</div>
+                <div className="certificate-footer">
+                  <a href={cert.link} target="_blank" rel="noopener noreferrer" className="view-cert-link">
+                    View Certificate <FaExternalLinkAlt />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
