@@ -15,8 +15,6 @@ import cvFile from '../assets/CV of Buwaneka_Fernando.pdf';
 import { workExperience, education } from '../data/experience';
 import { projects } from '../data/projects';
 import { certificates } from '../data/certificates';
-import { volunteeringPositions } from '../data/volunteering';
-import { achievements } from '../data/achievements';
 import Section from '../components/Section';
 
 const Home = () => {
@@ -234,33 +232,6 @@ const Home = () => {
         </div>
       </Section>
 
-      {/* Volunteering Section */}
-      <Section id="volunteering" className="volunteering-section">
-        <div className="section-head">
-          <p className="section-subtitle">My Service</p>
-          <h2 className="section-title">Volunteering <span className="text-gradient">Positions</span></h2>
-          <div className="underline"></div>
-        </div>
-
-        <div className="experience-container">
-          <div className="experience-section" style={{ gridColumn: '1 / -1' }}>
-            <div className="timeline">
-              {volunteeringPositions.map((item) => (
-                <div key={item.id} className="timeline-item">
-                  <div className="timeline-dot"></div>
-                  <div className="timeline-date">{item.period}</div>
-                  <div className="timeline-content">
-                    <h3>{item.title}</h3>
-                    <h4>{item.organization}</h4>
-                    <p>{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </Section>
-
       {/* Skills Section */}
       <Section id="skills" className="skills-section">
         <div className="section-head">
@@ -373,31 +344,6 @@ const Home = () => {
                 <div className="certificate-issuer">{cert.issuer}</div>
                 <h3>{cert.title}</h3>
                 <div className="certificate-date">{cert.date}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      {/* Achievements Section */}
-      <Section id="achievements" className="achievements-section">
-        <div className="section-head">
-          <p className="section-subtitle">My Milestones</p>
-          <h2 className="section-title">Other <span className="text-gradient">Achievements</span></h2>
-          <div className="underline"></div>
-        </div>
-
-        <div className="certificates-grid">
-          {achievements.map((item) => (
-            <div key={item.id} className="certificate-card">
-              <div className="certificate-img">
-                <img src={item.image} alt={item.title} />
-              </div>
-              <div className="certificate-content">
-                <div className="certificate-issuer">{item.issuer}</div>
-                <h3>{item.title}</h3>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>{item.description}</p>
-                <div className="certificate-date">{item.date}</div>
               </div>
             </div>
           ))}

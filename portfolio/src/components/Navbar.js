@@ -30,8 +30,6 @@ const Navbar = ({ theme, toggleTheme }) => {
           <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
           <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
           <li><a href="#certificates" onClick={() => setIsOpen(false)}>Certificates</a></li>
-          <li><a href="#achievements" onClick={() => setIsOpen(false)}>Achievements</a></li>
-          <li><a href="#volunteering" onClick={() => setIsOpen(false)}>Volunteering</a></li>
           <li><a href="#resume" onClick={() => setIsOpen(false)}>Resume</a></li>
           <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
           <div className="nav-socials-mobile">
